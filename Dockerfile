@@ -2,8 +2,8 @@
 FROM golang:1.20 AS builder
 
 WORKDIR /app
-COPY . .
-RUN go build -o server .
+COPY main.go .
+RUN go build -o server main.go
 
 FROM alpine:latest
 
