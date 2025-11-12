@@ -1,5 +1,5 @@
 # Original inefficient Dockerfile — needs improvement
-FROM golang:1.20
+FROM golang:1.20 AS builder
 
 WORKDIR /app
 COPY . .
